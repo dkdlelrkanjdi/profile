@@ -1,0 +1,133 @@
+:root{
+    --body-bg: lightblue ;
+    --hamberger-bg:lightblue;
+}
+body{
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+button{
+    width:100px;
+    height:30px;
+    background-color: yellow;
+    border-radius: 20px;
+    position: relative; 
+    bottom:10px;
+}
+.auto {
+    overflow: auto;
+    width: 150px;
+    height: 50px;
+    border: 5px solid white;
+  }
+
+.banner{
+    background-image: url("배경1.jpg");
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.container{
+    margin-top: 100px;
+    width: 500px;
+    height: 700px;
+    background-color:white;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile{
+    background-image: url("루피프사.jpg") ;
+    background-size: 300px;
+    margin-left: 110px;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin-top: 100px;
+    transition: 0.5s;
+}
+
+.profile:hover{
+    transform: scale(1.2);
+}
+.auto {
+    overflow: auto;
+    width: 450px;
+    height: 70px;
+    border: 5px solid white;
+    margin-top: 20px;
+  }
+
+
+  :root{
+    --body-bg: lightblue ;
+    --hamberger-bg:lightblue;
+}
+body{
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.minus,
+.minus::before,
+.minus::after {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    transition: 0.5s;
+    background:palevioletred;
+    border-radius: 20px;
+
+}
+.minus::before,
+.minus::after {
+    content: "";
+}
+.minus {
+    top: 40%;
+    margin-left: 95%;
+    
+}
+.minus::before{
+    top: -15px;
+}
+.minus::after{
+    top: 15px;
+}
+.toggle:checked ~ .minus::after {
+    top: 0;
+    transform: rotate(225deg);
+}
+
+.toggle:checked ~ .minus::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.toggle:checked ~ .minus {
+    background: var(--minus-bg);
+}
+.toggle{
+    opacity: 0;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+.name{
+    margin-top: 140px;
+}
